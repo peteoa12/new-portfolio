@@ -33,12 +33,7 @@
                 <nav>
                     <ul>
                         <div class="menu-nav-container">
-                            <ul id="menu-nav" class="menu">
-                                <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://peternormandev.com/about/">About</a>
-                                </li>
-                                <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-33"><a href="http://peternormandev.com/work">Work</a>
-                                </li>
-                            </ul>
+                            <?php wp_nav_menu() ?>
                         </div>
                     </ul>
                 </nav>

@@ -286,6 +286,23 @@ p {
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg); }
 
+.mobile-overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }
+  @media (min-width: 991px) {
+    .mobile-overlay {
+      display: none; } }
+
 .overlay-home {
   position: absolute;
   top: 0;
