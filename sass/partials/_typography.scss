@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'ElegantIcons';
+    src:url('fonts/ElegantIcons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:$primary;
+}
+
+p {
+    font-family: $secondary;
+    color:$black;
+}

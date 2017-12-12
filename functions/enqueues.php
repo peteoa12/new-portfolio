@@ -25,13 +25,24 @@ function portfolio_enqueues() {
   
   // Bootstrap 4 Beta
   wp_register_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js', false, '4.0.0-beta.2', true);
-  wp_enqueue_script('bootstrap-js');  
+  wp_enqueue_script('bootstrap-js'); 
+  
+  //Font Awesome
+  wp_register_script('fontawesome-js', 'https://use.fontawesome.com/2cdf1b564e.js');
+  wp_enqueue_script('fontawesome-js');
+  
+  
   
   //Tilt.js
   wp_register_script('tilt-js', 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', false, '1.2.1', true);
   wp_enqueue_script('tilt-js');
   
- 
+  //TweenMax
+  wp_register_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js', false, '1.20.3', true);
+  wp_enqueue_script('gsap-js');
+  
+  
+  //Custom theme JS
   wp_register_script('main-js', get_template_directory_uri() . '/theme/js/main.js', false, null, true);
   wp_enqueue_script('main-js');
 
