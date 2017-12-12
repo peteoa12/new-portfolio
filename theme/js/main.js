@@ -1,48 +1,64 @@
+(function($) {
+    
+    //***************Nav******************//
+    $(".hamburger").on("click", function() {
+        $("nav").toggleClass("overlay");
+        $(".top").toggleClass("clicked");
+        $(".middle").toggleClass("clicked");
+        $(".bottom").toggleClass("clicked");
+    });
 
-jQuery( document ).ready(function() {
-    console.log( "ready!" );
+    //***************Button******************//
+    $(".btn-default-2").hover(
+        function() {
+            TweenMax.to(".copy-2", 0.5, {
+                alpha: 0,
+                left: 80,
+                scale: 0.5,
+                ease: Expo.easeOut
+            });
+            TweenMax.to(".arrow-container-2", 0.5, {
+                alpha: 1,
+                left: 0,
+                ease: Expo.easeOut
+            });
+            TweenMax.fromTo(".main", 0.2, { width: "100%" }, { width: "30%" });
+            TweenMax.fromTo(".arrow-head", 0.5, { width: "10%" }, { width: "5%" });
+        },
+        function() {
+            TweenMax.to(".copy-2", 0.2, {
+                alpha: 1,
+                left: 0,
+                scale: 1,
+                ease: Power2.easeOut
+            });
+            TweenMax.to(".arrow-container-2", 0.2, {
+                alpha: 0,
+                scale: 0,
+                ease: Power2.easeOut
+            });
+            TweenMax.fromTo(".main", 0.2, { width: "30%" }, { width: "100%" });
+            TweenMax.fromTo(
+                ".arrow-head",
+                0.2, { width: "5%" }, { width: "10%", onComplete: startOver }
+            );
+        }
+    );
 
-    var rand = function	(min,max){
-    	return min + Math.random() * (max - min);
+    function startOver() {
+        TweenMax.to(".arrow-container-2", 0.01, { alpha: 0, scale: 1 });
+        TweenMax.to(".arrow-container-2", 0.01, { left: -100 });
     }
-    //NAV POP OUT======================================
-    	jQuery(".hamburger").on("click", function() {
-            console.log("animating");
-    		jQuery("nav").toggleClass("overlay");
-    	});
+    
+    //***************Homepage timeline******************//
+    
+    
+    
+    
+    var tlHome = new TimelineMax();
+    tlHome.from("#name", 0.75, {alpha:0, y:100, ease: Power4.easeOut});
+    tlHome.from(".job-title", 0.75, {alpha:0, y:100, ease: Power4.easeOut}, '-=0.25');
+    tlHome.from("#home-cta", 0.75, {alpha:0, y:100, ease: Power4.easeOut}, '-=0.25');
     
 
-    // HAMBURGER ANIMATION=============================
-    	jQuery(".hamburger").on("click", function() {
-    		jQuery(".top").toggleClass("clicked");
-    	});
-
-    	jQuery(".hamburger").on("click", function() {
-    		jQuery(".middle").toggleClass("clicked");
-
-    	});
-
-    	jQuery(".hamburger").on("click", function() {
-    		jQuery(".bottom").toggleClass("clicked");
-    	});
-    
-
-
-    //H2 POP IN=========================================
-    jQuery("a.project").hover( function() {   
-
-    	// TweenMax.to  , 0.2, {x:50}) 
-    	jQuery(this).find("h2").addClass('result-come-in');
-    }, function() {
-    	jQuery(this).find("h2").removeClass('result-come-in');
-    })
-  
-
-   //Header animation===================================
-    TweenMax.fromTo("h1",1,{alpha:0, y:-100},{alpha:1, y:0});
-
-   //Nav animation======================================
-
-
-
-});
+})(jQuery);

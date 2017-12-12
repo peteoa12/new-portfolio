@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
     <?php wp_head(); ?>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111114248-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111114248-1');
+    </script>
+
+
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat" rel="stylesheet">
 
@@ -22,7 +36,7 @@
                             <ul id="menu-nav" class="menu">
                                 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://peternormandev.com/about/">About</a>
                                 </li>
-                                <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-33"><a href="http://peternormandev.com/">Work</a>
+                                <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-33"><a href="http://peternormandev.com/work">Work</a>
                                 </li>
                             </ul>
                         </div>
@@ -38,18 +52,18 @@
 
 
 
-            <div class="row" style="flex-direction:row; justify-content:flex-end">
-                <a class="header-icon github mr-4" href="https://github.com/peteoa12">
-                    <i class="fa fa-facebook fa-lg icon" aria-hidden="true"></i>
-                    <div class="icon-label">facebook</div>
+            <div class="row social-links">
+                <a class="header-icon linkedin mr-4" href="https://www.linkedin.com/in/peter-norman-dev/" target="_blank">
+                    <i class="fa fa-linkedin fa-lg icon" aria-hidden="true"></i>
+                    <div class="icon-label">linkedin</div>
                 </a>
-                <a class="header-icon github mr-4" href="https://github.com/peteoa12">
+                <a class="header-icon github mr-4" href="https://github.com/peteoa12" target="_blank">
                     <i class="fa fa-github-alt fa-lg icon" aria-hidden="true"></i>
                     <div class="icon-label">github</div>
                 </a>
-                <a class="header-icon linkedin mr-4" href="https://www.linkedin.com/in/peter-norman-dev/">
-                    <i class="fa fa-linkedin fa-lg icon" aria-hidden="true"></i>
-                    <div class="icon-label">linkedin</div>
+                <a class="header-icon github mr-4" href="https://github.com/peteoa12" target="_blank">
+                    <i class="fa fa-facebook fa-lg icon" aria-hidden="true"></i>
+                    <div class="icon-label">facebook</div>
                 </a>
             </div>
         </div>

@@ -1,13 +1,15 @@
 
 @import 'universals';
+
 // *********PARTIALS*********
 //***************************
 @import 'partials/variables';
 @import 'partials/typography';
-@import 'partials/nav';
+@import 'partials/header';
+
 // ********COMPONENTS********
 //***************************
-
+@import 'components/buttons';
 
 // **********PAGES***********
 //***************************

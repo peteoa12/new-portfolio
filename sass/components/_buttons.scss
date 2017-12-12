@@ -1,0 +1,83 @@
+.btn-default {
+    font-family: $secondary;
+    color: $beige;
+    border: 1px solid $beige;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.25s ease-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+
+    &:hover {
+        background: $red;
+        border-color: $red;
+        color: $beige;
+    }
+}
+
+.btn-default-2 {
+    position: relative;
+    font-family: $secondary;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    color: $beige;
+    border:1px solid $beige;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    
+    &:hover {
+        background: $red;
+        border-color: $red;
+        color: $beige;
+    }
+}
+
+//Special hover animation
+.arrow-container-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+}
+
+.copy-2 {
+    display: inline-block;
+    position: relative;
+}
+
+.arrow-2 {
+    position: absolute;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    right: 200px;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    width: 30%;
+    transform-origin: left;
+}
+
+.left,
+.right {
+    width: 5%;
+    left: 60%;
+    transform-origin: 100% 50% 0px;
+}
+
+.left {
+    transform: rotate(-50deg);
+}
+
+.right {
+    transform: rotate(50deg);
+}

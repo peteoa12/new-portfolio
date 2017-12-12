@@ -41,6 +41,10 @@ function portfolio_enqueues() {
   wp_register_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js', false, '1.20.3', true);
   wp_enqueue_script('gsap-js');
   
+  //GSAP Draw SVG
+  wp_register_script('drawSVG-js', get_template_directory_uri() . '/theme/js/DrawSVGPlugin.js', false, '0.1.2', true);
+  wp_enqueue_script('drawSVG-js');
+  
   
   //Custom theme JS
   wp_register_script('main-js', get_template_directory_uri() . '/theme/js/main.js', false, null, true);
