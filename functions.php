@@ -65,3 +65,9 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+?>
+
+<?php require get_template_directory() . '/functions/cleanup.php';?>
+<?php require get_template_directory() . '/functions/enqueues.php';?>
+<?php require get_template_directory() . '/functions/remove-query-string.php';?>
+
