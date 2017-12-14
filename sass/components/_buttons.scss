@@ -8,6 +8,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    
 
 
     &:hover {
@@ -20,15 +21,16 @@
 .btn-default-2 {
     position: relative;
     font-family: $secondary;
-    font-size: 20px;
+    font-size: calc(16px + 0.5vw);
     cursor: pointer;
     overflow: hidden;
     text-align: center;
     color: $beige;
     border:1px solid $beige;
-    padding: 10px 20px;
+    padding: calc(10px + 0.5vw) calc(20px + 0.5vw);
     display: flex;
     justify-content: center;
+    // background:rgba(0,0,0,0.2);
     
     &:hover {
         background: $red;

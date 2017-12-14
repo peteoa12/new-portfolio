@@ -1,5 +1,5 @@
 (function($) {
-    
+
     //***************Nav******************//
     $(".hamburger").on("click", function() {
         $("nav").toggleClass("overlay");
@@ -49,16 +49,22 @@
         TweenMax.to(".arrow-container-2", 0.01, { alpha: 0, scale: 1 });
         TweenMax.to(".arrow-container-2", 0.01, { left: -100 });
     }
-    
+
     //***************Homepage timeline******************//
-    
-    
-    
-    
     var tlHome = new TimelineMax();
-    tlHome.from("#name", 0.75, {alpha:0, y:100, ease: Power4.easeOut});
-    tlHome.from(".job-title", 0.75, {alpha:0, y:100, ease: Power4.easeOut}, '-=0.25');
-    tlHome.from("#home-cta", 0.75, {alpha:0, y:100, ease: Power4.easeOut}, '-=0.25');
-    
+    tlHome.from("#name", 0.75, { alpha: 0, y: 100, ease: Power4.easeOut });
+    tlHome.from(".job-title", 0.75, { alpha: 0, x: 100, ease: Elastic.easeOut.config(1, 0.75) }, '-=0.25');
+    tlHome.from("#home-cta", 0.75, { alpha: 0, x: -100, ease: Elastic.easeOut.config(1, 0.75) }, '-=0.25');
+
+
+    //*************Mobile gradient background animation***************//
+    $('.inner').tilt({
+        glare: true,
+        maxGlare: .4
+    })
+
+    $('.single-project').tilt({
+        reset: false
+    })
 
 })(jQuery);

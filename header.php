@@ -50,15 +50,15 @@
             <div class="row social-links">
                 <a class="header-icon linkedin mr-4" href="https://www.linkedin.com/in/peter-norman-dev/" target="_blank">
                     <i class="fa fa-linkedin fa-lg icon" aria-hidden="true"></i>
-                    <div class="icon-label">linkedin</div>
+                    <div class="icon-label">Linkedin</div>
                 </a>
                 <a class="header-icon github mr-4" href="https://github.com/peteoa12" target="_blank">
                     <i class="fa fa-github-alt fa-lg icon" aria-hidden="true"></i>
-                    <div class="icon-label">github</div>
+                    <div class="icon-label">Github</div>
                 </a>
-                <a class="header-icon github mr-4" href="https://github.com/peteoa12" target="_blank">
+                <a class="header-icon github mr-4" href="https://www.facebook.com/Phweeter" target="_blank">
                     <i class="fa fa-facebook fa-lg icon" aria-hidden="true"></i>
-                    <div class="icon-label">facebook</div>
+                    <div class="icon-label">Facebook</div>
                 </a>
             </div>
         </div>

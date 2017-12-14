@@ -1,0 +1,7 @@
+<section class="layout layout-project">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</section>

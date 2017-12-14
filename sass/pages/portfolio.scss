@@ -1,0 +1,114 @@
+section.layout.layout-portfolio {
+    padding: 90px 0;
+    
+    .container {
+        @media (min-width: 1400px) {
+            width: 1400px;
+        }
+        position: relative;
+    }
+    
+    .portfolio-grid {
+        padding: 25px 0px;
+        position: relative;
+        
+        &.active {
+            
+            .single-project {
+                opacity: 1;
+            }
+            
+        }
+        
+        &::after {
+            content: "";
+            flex: auto;
+        }
+        
+        .single-project {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+            position: relative;
+            padding: 0 15px;
+            // padding-bottom: 40%;
+            height: 275px;
+            // opacity: 0;
+            transition: 0.2s all ease-out;
+            transform-style: preserve-3d;
+            
+            @media (min-width: 768px) {
+                width: 50%;
+                // padding-bottom: 30%;
+                height: 250px;
+            }
+            
+            @media (min-width: 992px) {
+                width: 33.3%;
+                // padding-bottom: 20%;
+                height: 200px;
+            }
+            
+            @media (min-width: 1200px) {
+                width: 25%;
+                // padding-bottom: 15%;
+                height: 200px;
+            }
+            
+            &:focus,
+            &:active {
+                outline: 0px;
+            }
+            
+            &:hover {
+                
+                .text-container {
+                    
+                    span.project-subtitle {
+                        transform: translateY(0);
+                        max-height: 20px;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            .inner {
+                position: absolute;
+                height: 0;
+                height: 100%;
+                width: calc(100% - 30px);
+                transform: translateZ(20px);
+                
+                .img-overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0,0,0,0.4);
+                }
+            }
+            
+            .text-container {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                padding: 0 20px;
+                
+                span {
+                    margin-bottom: 0;
+                    display: block;
+                    
+                    &.project-subtitle {
+                        transform: translateY(-20px);
+                        opacity: 0;
+                        max-height: 0;
+                        transition: 0.2s all ease-out;
+                    }
+                }
+            }
+        }
+    }
+}

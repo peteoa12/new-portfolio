@@ -13,10 +13,10 @@
         transition-duration: 0.3s, 0.5s;
         transition-timing-function: ease, ease-out;
         transition-delay: 3ms;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        z-index:101;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 101;
     }
 
     nav ul li {
@@ -39,6 +39,9 @@
         transition-duration: 0.5s;
         transition-timing-function: ease;
         transition-delay: 4ms;
+        // background: linear-gradient(to right, rgb(224, 234, 252), rgb(207, 222, 243));
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
     }
 
     nav ul li:hover {
@@ -46,7 +49,7 @@
     }
 
     nav ul li:hover a {
-        color: #2b3a42;
+        color: $black;
         border-radius: 0;
     }
 
@@ -64,7 +67,7 @@
         top: 28px;
         left: 2em;
         padding: 1em;
-        z-index:102;
+        z-index: 102;
         transition-property: all;
         transition-duration: 0.5s;
         transition-timing-function: ease;
@@ -131,7 +134,7 @@
 
     .header-icon {
         position: relative;
-        z-index:2;
+        z-index: 2;
         float: right;
         width: 40px;
         height: 40px;
@@ -147,7 +150,7 @@
 
             .icon-label {
                 opacity: 1;
-                top: 120%;
+                top: 130%;
                 ;
             }
         }
@@ -173,7 +176,9 @@
     .social-links {
         flex-direction: row;
         justify-content: flex-end;
-        z-index:1000;
+        z-index: 1000;
         margin-top: 27px;
+        position: fixed;
+        right: 2%;
     }
 }

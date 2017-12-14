@@ -1,6 +1,6 @@
 <section class="layout layout-home">
     <div class="overlay-home"></div>
-    <div class="mobile-overlay" style="background-image:url(<?php echo get_template_directory_uri()?>/img/atlanta.jpg)"></div>
+    <div class="mobile-overlay" ></div>
     <video class="home-video" src="<?php echo get_template_directory_uri()?>/img/skyline.mp4" autoplay loop muted>
     </video>
 
@@ -43,16 +43,13 @@
         <h3 class="job-title mb-5 mt-3">Full Stack Developer</h3>
         
 
-        <a id="home-cta" href="#" class="btn-default-2 col-6 offset-3 mt-3">
-            <div class="copy-2">Portfolio</div>
+        <a id="home-cta" href="/portfolio/" class="btn-default-2 col-8 offset-2 mt-3" style="display:inline-block;">
+            <div class="copy-2">View Portfolio</div>
             <div class="arrow-container-2">
                 <div class="arrow-2 main"></div>
                 <div class="arrow-2 left arrow-head"></div>
                 <div class="arrow-2 right arrow-head"></div>
             </div>
         </a>
-        
     </div>
-
-
 </section>

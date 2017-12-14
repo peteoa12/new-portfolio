@@ -1,6 +1,7 @@
 body {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background: #000; }
 
 a, a:hover, a:visited, a:active {
   text-decoration: none; }
@@ -20,6 +21,27 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Montserrat", sans-serif;
   color: #2e2e2e; }
+
+.text-white {
+  color: #fff; }
+
+h1 {
+  font-size: calc(32px + 0.5vw); }
+
+h2 {
+  font-size: calc(24px + 0.5vw); }
+
+h3 {
+  font-size: calc(21px + 0.5vw); }
+
+h4 {
+  font-size: calc(16px + 0.5vw); }
+
+h5 {
+  font-size: calc(13px + 0.5vw); }
+
+h6 {
+  font-size: calc(12px + 0.5vw); }
 
 .header nav {
   position: relative;
@@ -85,7 +107,7 @@ p {
   background-color: #ded9cf; }
 
 .header nav ul li:hover a {
-  color: #2b3a42;
+  color: #2e2e2e;
   border-radius: 0; }
 
 .header header {
@@ -176,7 +198,7 @@ p {
       color: white; }
     .header .header-icon:hover .icon-label {
       opacity: 1;
-      top: 120%; }
+      top: 130%; }
   .header .header-icon .icon,
   .header .header-icon .icon-label {
     color: #2e2e2e;
@@ -201,7 +223,9 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   z-index: 1000;
-  margin-top: 27px; }
+  margin-top: 27px;
+  position: fixed;
+  right: 2%; }
 
 .btn-default {
   font-family: "Montserrat", sans-serif;
@@ -226,13 +250,13 @@ p {
 .btn-default-2 {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: calc(16px + 0.5vw);
   cursor: pointer;
   overflow: hidden;
   text-align: center;
   color: #dedacf;
   border: 1px solid #dedacf;
-  padding: 10px 20px;
+  padding: calc(10px + 0.5vw) calc(20px + 0.5vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,9 +311,6 @@ p {
           transform: rotate(50deg); }
 
 .mobile-overlay {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -298,7 +319,29 @@ p {
   width: auto;
   height: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%); }
+          transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  background: -webkit-gradient(linear, right top, left top, from(#FEAC5E), color-stop(#C779D0), to(#4BC0C8));
+  background: linear-gradient(270deg, #FEAC5E, #C779D0, #4BC0C8);
+  background-size: 200% 200%;
+  -webkit-animation: mobileGradientAnimation 15s ease-in-out infinite;
+          animation: mobileGradientAnimation 15s ease-in-out infinite; }
+
+@-webkit-keyframes mobileGradientAnimation {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes mobileGradientAnimation {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   @media (min-width: 991px) {
     .mobile-overlay {
       display: none; } }
@@ -345,3 +388,83 @@ p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #dedacf; }
+
+section.layout.layout-portfolio {
+  padding: 90px 0; }
+  section.layout.layout-portfolio .container {
+    position: relative; }
+    @media (min-width: 1400px) {
+      section.layout.layout-portfolio .container {
+        width: 1400px; } }
+  section.layout.layout-portfolio .portfolio-grid {
+    padding: 25px 0px;
+    position: relative; }
+    section.layout.layout-portfolio .portfolio-grid.active .single-project {
+      opacity: 1; }
+    section.layout.layout-portfolio .portfolio-grid::after {
+      content: "";
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; }
+    section.layout.layout-portfolio .portfolio-grid .single-project {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+      position: relative;
+      padding: 0 15px;
+      height: 275px;
+      -webkit-transition: 0.2s all ease-out;
+      transition: 0.2s all ease-out;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d; }
+      @media (min-width: 768px) {
+        section.layout.layout-portfolio .portfolio-grid .single-project {
+          width: 50%;
+          height: 250px; } }
+      @media (min-width: 992px) {
+        section.layout.layout-portfolio .portfolio-grid .single-project {
+          width: 33.3%;
+          height: 200px; } }
+      @media (min-width: 1200px) {
+        section.layout.layout-portfolio .portfolio-grid .single-project {
+          width: 25%;
+          height: 200px; } }
+      section.layout.layout-portfolio .portfolio-grid .single-project:focus, section.layout.layout-portfolio .portfolio-grid .single-project:active {
+        outline: 0px; }
+      section.layout.layout-portfolio .portfolio-grid .single-project:hover .text-container span.project-subtitle {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        max-height: 20px;
+        opacity: 1; }
+      section.layout.layout-portfolio .portfolio-grid .single-project .inner {
+        position: absolute;
+        height: 0;
+        height: 100%;
+        width: calc(100% - 30px);
+        -webkit-transform: translateZ(20px);
+                transform: translateZ(20px); }
+        section.layout.layout-portfolio .portfolio-grid .single-project .inner .img-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.4); }
+      section.layout.layout-portfolio .portfolio-grid .single-project .text-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 100%;
+        padding: 0 20px; }
+        section.layout.layout-portfolio .portfolio-grid .single-project .text-container span {
+          margin-bottom: 0;
+          display: block; }
+          section.layout.layout-portfolio .portfolio-grid .single-project .text-container span.project-subtitle {
+            -webkit-transform: translateY(-20px);
+                    transform: translateY(-20px);
+            opacity: 0;
+            max-height: 0;
+            -webkit-transition: 0.2s all ease-out;
+            transition: 0.2s all ease-out; }

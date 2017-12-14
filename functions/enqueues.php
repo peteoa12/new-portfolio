@@ -37,13 +37,17 @@ function portfolio_enqueues() {
   wp_register_script('tilt-js', 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', false, '1.2.1', true);
   wp_enqueue_script('tilt-js');
   
-  //TweenMax
+  //GSAP TweenMax
   wp_register_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js', false, '1.20.3', true);
   wp_enqueue_script('gsap-js');
   
-  //GSAP Draw SVG
+  //GSAP DrawSVG plugin
   wp_register_script('drawSVG-js', get_template_directory_uri() . '/theme/js/DrawSVGPlugin.js', false, '0.1.2', true);
   wp_enqueue_script('drawSVG-js');
+  
+  //GSAP ColorProps plugin
+  wp_register_script('colorProps-js', get_template_directory_uri() . '/theme/js/ColorPropsPlugin.js', false, '1.5.0', true);
+  wp_enqueue_script('colorProps-js');
   
   
   //Custom theme JS
