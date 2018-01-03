@@ -5,25 +5,29 @@
 	font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    color: $beige;
+}
 
-h1,h2,h3,h4,h5,h6 {
+
+h1,h2,h3 {
     font-family:$primary;
+}
+
+h4, h5, h6 {
+    font-family:$secondary;
+    font-weight:100;
 }
 
 p {
     font-family: $secondary;
-    color:$black;
-}
-
-.text-white {
-    color:#fff;
 }
 
 h1 {
     font-size: calc(32px + 0.5vw);
 }
 h2 {
-    font-size: calc(24px + 0.5vw);
+    font-size: calc(28px + 0.5vw);
 }
 h3 {
     font-size: calc(21px + 0.5vw);
@@ -36,4 +40,8 @@ h5 {
 }
 h6 {
     font-size: calc(12px + 0.5vw);
+}
+
+.text-white {
+    color:#fff;
 }

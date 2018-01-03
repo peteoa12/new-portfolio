@@ -22,7 +22,7 @@
 
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora" rel="stylesheet">
 
 </head>
 
