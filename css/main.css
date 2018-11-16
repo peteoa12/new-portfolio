@@ -392,6 +392,9 @@ h6 {
   text-align: center;
   color: #dedacf; }
 
+.title-name {
+  font-size: 3rem; }
+
 section.layout.layout-portfolio {
   padding: 90px 0; }
   section.layout.layout-portfolio .container {

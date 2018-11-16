@@ -5,40 +5,7 @@
     </video>
 
     <div class="logo-container">
-        <svg id="name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.98 50.23">
-            <defs>
-                <style>
-                    .cls-1 {
-                        font-size: 42px;
-                        fill: #dedacf;
-                        font-family: QuimbyMayoral, Quimby Mayoral;
-                    }
-                    .cls-2 {
-                        letter-spacing: -0.05em;
-                    }
-                    .cls-3 {
-                        letter-spacing: 0.01em;
-                    }
-                </style>
-            </defs>
-
-            <g data-name="Layer 2">
-                <g id="cv">
-                    <g id="cv-2" data-name="cv">
-                        <g id="header">
-                            <g id="heading">
-                                <text class="cls-1" transform="translate(0 35.7)">
-                                    <tspan class="cls-2">P</tspan>
-                                    <tspan x="30.53" y="0">eter Norm</tspan>
-                                    <tspan class="cls-3" x="174.3" y="0">a</tspan>
-                                    <tspan x="191.85" y="0">n</tspan>
-                                </text>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>
+        <h1 class="text-center title-name">Peter Norman</h1>
         
         <h3 class="job-title mb-5 mt-3">Full Stack Developer</h3>
         
