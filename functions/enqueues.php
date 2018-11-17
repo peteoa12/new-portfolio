@@ -31,8 +31,6 @@ function portfolio_enqueues() {
   wp_register_script('fontawesome-js', 'https://use.fontawesome.com/2cdf1b564e.js');
   wp_enqueue_script('fontawesome-js');
   
-  
-  
   //Tilt.js
   wp_register_script('tilt-js', 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', false, '1.2.1', true);
   wp_enqueue_script('tilt-js');

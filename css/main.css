@@ -22,14 +22,14 @@ h1, h2, h3, h4, h5, h6, p {
   color: #dedacf; }
 
 h1, h2, h3 {
-  font-family: "Lora", sans-serif; }
+  font-family: "BioRhyme", serif; }
 
 h4, h5, h6 {
-  font-family: "Karla", sans-serif;
+  font-family: "Space Mono", monospace;
   font-weight: 100; }
 
 p {
-  font-family: "Karla", sans-serif; }
+  font-family: "Space Mono", monospace; }
 
 h1 {
   font-size: calc(32px + 0.5vw); }
@@ -103,7 +103,7 @@ h6 {
             transition-delay: 4ms; }
   .header nav ul li a {
     text-decoration: none;
-    font-family: "Karla", sans-serif;
+    font-family: "Space Mono", monospace;
     display: block;
     font-weight: 700;
     font-size: 3em;
@@ -231,7 +231,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .btn-default {
-  font-family: "Karla", sans-serif;
+  font-family: "Space Mono", monospace;
   color: #dedacf;
   border: 1px solid #dedacf;
   padding: 10px 20px;
@@ -252,7 +252,7 @@ h6 {
 
 .btn-default-2 {
   position: relative;
-  font-family: "Karla", sans-serif;
+  font-family: "Space Mono", monospace;
   font-size: calc(16px + 0.5vw);
   cursor: pointer;
   overflow: hidden;
@@ -388,7 +388,7 @@ h6 {
     width: 100%; }
 
 .job-title {
-  font-family: "Karla", sans-serif;
+  font-family: "Space Mono", monospace;
   text-align: center;
   color: #dedacf; }
 

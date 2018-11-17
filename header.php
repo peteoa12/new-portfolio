@@ -22,8 +22,8 @@
 
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora" rel="stylesheet">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700|Space+Mono" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>

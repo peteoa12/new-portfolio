@@ -74,13 +74,13 @@
     //*************Tilt.js***************//
     $('.inner').tilt({
         glare: true,
-        maxGlare: .4
-    })
+        maxGlare: .1
+    });
 
     $('.single-project').tilt({
         reset: false
-    })
-
+    });
+    
 
 
 })(jQuery);
