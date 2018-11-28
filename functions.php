@@ -70,5 +70,6 @@ return $count;
 <?php require get_template_directory() . '/functions/cleanup.php';?>
 <?php require get_template_directory() . '/functions/enqueues.php';?>
 <?php require get_template_directory() . '/functions/remove-query-string.php';?>
+<?php require get_template_directory() . '/functions/taxonomies.php';?>
 
-<?php// add_filter('show_admin_bar', '__return_false');?>
+<?php add_filter('show_admin_bar', '__return_false');?>

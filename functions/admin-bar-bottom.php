@@ -1,6 +1,11 @@
 
-// move admin bar to bottom
+<?php
+/**	
+ * Move admin bar to the bottom of the viewport
+ */
+?>
 <?php function fb_move_admin_bar() { ?>
+	
 	<style type="text/css">
 		body {
 			margin-top: -28px;
@@ -20,8 +25,10 @@
 			bottom: 28px;
 		}
 	</style>
-<?php }
+<?php } ?>
+<?php
 // on backend area
 add_action( 'admin_head', 'fb_move_admin_bar' );
 // on frontend area
-add_action( 'wp_head', 'fb_move_admin_bar' );?>
+add_action( 'wp_head', 'fb_move_admin_bar' );
+?>

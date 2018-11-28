@@ -55,4 +55,6 @@ function portfolio_enqueues() {
   
 
 }
+
 add_action('wp_enqueue_scripts', 'portfolio_enqueues', 100);
+?>

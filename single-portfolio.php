@@ -1,3 +1,21 @@
 <?php get_header()?>
-<?php get_template_part('includes/content', 'project')?>
+
+<section class="single-project">
+
+    <?php if( get_field('project_title') ): ?>
+        <h1><?php the_field('project_title') ?></h1>
+    <?php endif;?>
+
+    <?php if( get_field('project_img') ): ?>
+        <img src="<?php the_field('project_img')?>" alt="">
+    <?php endif;?>
+
+    <?php if( get_field('project_focus') ): ?>
+        <p><?php the_field('project_focus')?></p>
+    <?php endif;?>
+
+    <a href="<?php the_field('project_url')?>">Visit Site</a>
+
+</section>
+
 <?php get_footer()?>
